@@ -1,0 +1,110 @@
+/* Webpage by Arnav Anand (Apeejay School, Mahavir Marg, Jalandhar) */
+
+.prop {
+    position: absolute;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.nav {
+    height: 7%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.03);
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 5 !important;
+}
+
+#head-pic {
+    position: relative;
+    width: 10%;
+    left: 25%;
+}
+
+.links {
+    position: relative;
+    height: 62%;
+    top: -100%;
+    display: block;
+    float: left;
+    left: 46.4%;
+    color: #9800EE;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.nav a:first-child {
+    position: relative;
+    height: 100%;
+    display: block;
+    width: 33%;
+    left: 0 !important;
+}
+
+.nav a:link, .dropdown a:link {
+    color: #153e52;
+    text-decoration: none;
+}
+
+.nav a:visited, .dropdown a:visited {
+    color:#153e52;
+    text-decoration: none;
+}
+
+.nav a:hover, .dropdown a:hover {
+    color: #153e52;
+    text-decoration: none;
+}
+
+.nav a:active, .dropdown a:active {
+    color: #153e52;
+    text-decoration: none;
+}
+
+.links {
+    transition: all ease 0.2s;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links:hover {
+    transition: all ease 0.2s;
+    background-color: #fbfbfb;
+}
+
+.links span {
+    padding: 0 10px 0 10px;
+    vertical-align: middle;
+}
+
+.links span::after, .active:after {
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: ".";
+    color: transparent;
+    background-color: #153e52;
+    height: 2px;
+    width: 0;
+    transition: all 0.2s ease;
+}
+
+.links:hover span::after {
+    width: 50%;
+    transition: all 0.2s ease;
+}
+
+.links span::after {
+    width: 0;
+}
+
+.active::after {
+    width: 50%;
+}

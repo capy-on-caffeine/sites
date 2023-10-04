@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Images/logo.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="form.css">
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/560be50dc6.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('#link1').click(function(){
+           $('body,html').animate({
+               scrollTop : 0
+           }, 500);
+           return false;
+        }); 
+        });
+        
+        $(document).ready(function(){
+        $('#link2').click(function(){
+           $('body,html').animate({
+               scrollTop : 480
+           }, 500);
+           return false;
+        }); 
+        });
+        
+        $(document).ready(function(){
+        $('#link3').click(function(){
+           $('body,html').animate({
+               scrollTop : 1130
+           }, 500);
+           return false;
+        }); 
+        });
+        
+        $(document).ready(function(){
+        $('#link4').click(function(){
+           $('body,html').animate({
+               scrollTop : 1850
+           }, 500);
+           return false;
+        }); 
+        });
+
+        $(document).ready(function(){
+        $('#link5').click(function(){
+           $('body,html').animate({
+               scrollTop : 2725
+           }, 500);
+           return false;
+        }); 
+        });
+    </script>
+    <title>Apex Travels</title>
+
+    <style>
+        .slider {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            overflow: hidden;
+            height: 100%;
+            z-index: -1;
+        }
+
+        #slide-container {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 400%;
+            height: 70%;
+            transition: all 1s ease-in-out;
+        }
+
+        .slide {
+            position: relative;
+            height: 100%;
+            width: 25%;
+            float: left;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="nav prop">
+        <a href="index.html"><img src="Images/logo.png" id="head-pic"></a>
+        <a href="" class="links" id="link1"><span>Home</span></a>
+        <a href="" class="links" id="link2"><span>About Us</span></a>
+        <a href="" class="links" id="link3"><span>Popular Plans</span></a>
+        <a href="" class="links" id="link4"><span>Gallery</span></a>
+        <a href="" class="links" id="link5"><span>Ask Us</span></a>
+    </div>
+
+    <div class="wrapper prop">
+        <div class="overlay">
+            <span class="tag">Travelling has never been this easy</span>
+            <a class="stag" href="coming-soon.html">Become a Member</a>
+        </div>
+        <div class="slider">
+            <div id="slide-container">
+                <div class="slide" style="background-image: url('Images/cover1.jpg'); background-repeat: no-repeat;"></div>
+                <div class="slide" style="background-image: url('Images/cover2.jpg'); background-repeat: no-repeat;"></div>
+                <div class="slide" style="background-image: url('Images/cover3.jpg'); background-repeat: no-repeat;"></div>
+                <div class="slide" style="background-image: url('Images/cover4.jpg'); background-repeat: no-repeat;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about prop">
+        <div class="head"><br><br>About Us<br><br></div>
+        <img style="display: inline; float: left; width: 50%;" src="Images/staff.jpg">
+        <div style="position: relative; left: 20px; text-align: justify;">
+            
+            Apex Travels has been committed to bringing our clients the best in value and quality travel arrangements. We are passionate about travel and sharing the world's wonders, and providing travelers services to facilitate their travel needs and make it memorable. Our award-winning company consistently ranks as one of the best agencies in the country.<br><br>
+            Our strong company culture and passion for our profession has resulted in our being named each year as one of the best places to work. Satisfied employees lead to satisfied customers. We know the growth and success of our company depends upon fulfilling our clients needs every day. <br><br>
+            By enrolling for a membership, our clients are offered various travel offers. Our passion is custom designing your travel, creating personalized, seamless and stress-free itineraries with every detail in mind. We know all vacations are not alike. As a seasoned traveler you want that experience that sets your trip apart, that enhances and inspires you. That difference is what matters to us in crafting the right travel experience for you. 
+        
+        </div>
+    </div>
+
+    <div class="popular prop">
+        <div class="head"><br><br>Popular Plans<br><br></div>
+        <div class="plans">
+        <div style="position: relative; width: 100%; padding-left: 4.2%;">
+
+            <div class="planbox">
+                <img src="Images/apartments.jpg"><br><br>
+                <span style="font-size: 1.6em;">Apartments</span><br>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li>Stay in your private space with entertainment services and internet connectivity.</li>
+                </ul><br>
+                <a class="btn" href="coming-soon.html">More Details</a>
+            </div>
+            
+            <div class="planbox">
+                <img src="Images/vacation rentals.jpg"><br><br>
+                <span style="font-size: 1.6em;">Vacation Rentals</span><br>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li>Experience the local life and save money whithout worrying about your valuables.</li>
+                </ul><br>
+                <a class="btn" href="coming-soon.html">More Details</a>
+            </div>
+
+            <div class="planbox">
+                <img src="Images/private villas.jpg"><br><br>
+                <span style="font-size: 1.6em;">Private Villas</span><br>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li>Enjoy your exquisite stay while a dedicated staff looks over your personal services.</li>
+                </ul><br>
+                <a class="btn" href="coming-soon.html">More Details</a>
+            </div>
+
+            <div class="planbox">
+                <img src="Images/bungalows.jpg"><br><br>
+                <span style="font-size: 1.6em;">Bungalows</span><br>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li>Stay in a comfortable bungalow designed specially for tourists, surrounded by nature's bounty.</li>
+                </ul><br>
+                <a class="btn" href="coming-soon.html">More Details</a>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+    <div class="gallery prop">
+        <div class="head"><br><br>Gallery<br><br></div>
+        <div class="gall-head">
+            
+            <a href="javascript:void(0)" onclick="asia()" id="asia" class="gall-btn gall-active">Asia</a>
+            <a href="javascript:void(0)" onclick="europe()" id="europe" class="gall-btn">Europe</a>
+            <a href="javascript:void(0)" onclick="america()" id="america" class="gall-btn">America</a>
+            <a href="javascript:void(0)" onclick="australia()" id="australia" class="gall-btn">Australia</a>
+            <a href="javascript:void(0)" onclick="africa()" id="africa" class="gall-btn">Africa</a>
+            
+            <br><br><br></div>
+        <div class="images">
+            <div id="asia-panel" style="position: relative; width: 100%; padding-left: 3.5%; display: block;">
+    
+                <div class="place">
+                    <img src="Images/agra.jpg">
+                </div>
+                
+                <div class="place">
+                    <img src="Images/kyoto.jpg">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/china.jpg">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/jaipur.jpg">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/everest.png">
+                </div>
+
+                <div class="place">
+                    <img src="Images/maldives.jpg">
+                </div>
+
+                <div class="place">
+                    <img src="Images/kong.webp">
+                </div>
+
+                <div class="place">
+                    <img src="Images/fuji.jpg">
+                </div>
+            </div>
+            
+            <div id="africa-panel" style="position: relative; width: 100%; padding-left: 3.5%; display: none;">
+    
+                <div class="place">
+                    <img src="Images/cape.webp">
+                </div>
+                
+                <div class="place">
+                    <img src="Images/madagascar.webp">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/victoria.jpg">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/namibia.jpg">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/seychelles.jpg">
+                </div>
+
+                <div class="place">
+                    <img src="Images/giza.jpg">
+                </div>
+
+                <div class="place">
+                    <img src="Images/luxor.jpg">
+                </div>
+
+                <div class="place">
+                    <img src="Images/serengeti.jpg">
+                </div>
+            </div>
+            
+            <div id="europe-panel" style="position: relative; width: 100%; padding-left: 3.5%; display: none;">
+    
+                <div class="place">
+                    <img src="Images/paris.jpg">
+                </div>
+                
+                <div class="place">
+                    <img src="Images/rome.jpg">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/london.jpg">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/alps.jpg">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/venice.jpg">
+                </div>
+
+                <div class="place">
+                    <img src="Images/athens.jpg">
+                </div>
+
+                <div class="place">
+                    <img src="Images/brussels.jpg">
+                </div>
+
+                <div class="place">
+                    <img src="Images/berlin.jpg">
+                </div>
+            </div>
+            
+            <div id="america-panel" style="position: relative; width: 100%; padding-left: 3.5%; display: none;">
+    
+                <div class="place">
+                    <img src="Images/chicago.jpg">
+                </div>
+                
+                <div class="place">
+                    <img src="Images/machu.jpg">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/rio.webp">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/canyon.jpg">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/yosemite.jpg">
+                </div>
+
+                <div class="place">
+                    <img src="Images/easter.webp">
+                </div>
+
+                <div class="place">
+                    <img src="Images/aires.jpg">
+                </div>
+
+                <div class="place">
+                    <img src="Images/hollywood.webp">
+                </div>
+            </div>
+            
+            <div id="australia-panel" style="position: relative; width: 100%; padding-left: 3.5%; display: none;">
+    
+                <div class="place">
+                    <img src="Images/sydney.jpg">
+                </div>
+                
+                <div class="place">
+                    <img src="Images/perth.webp">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/reef.webp">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/uluru.jpg">
+                </div>
+    
+                <div class="place">
+                    <img src="Images/melbourne.jpg">
+                </div>
+
+                <div class="place">
+                    <img src="Images/harbour.webp">
+                </div>
+
+                <div class="place">
+                    <img src="Images/kakadu.jpg">
+                </div>
+
+                <div class="place">
+                    <img src="Images/kangaroo.webp">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact prop">
+        <div class="contact-txtdiv">
+            <div class="head" style="text-align: left;"><br><br>Have any queries? You can ask us.<br><br></div>
+            <span class="contact-txt">
+                We have a dedicated team for listening to your inquiries. They try to provide you satisfactory answers within 24 hours. Its our responsibility to handle our customers' doubts and maintain a healthy bond.<br>
+                Just describe your question as well as you can and send through this form with your name and email address. Don't worry! Your information is safe with us. 
+            </span>
+        </div>
+
+        <div class="form">
+            <div class="container">
+                <div class="reg" id="reg">
+                <div class="regin">
+                <form method="post" action="coming-soon.html">
+                    <br><input type="text" placeholder="Name" autocomplete="off" name="name"><br><br><br>
+                    <input type="email" placeholder="Email Address" autocomplete="off" name="email"><br><br><br>
+                    <input type="text" placeholder="Ask query..." autocomplete="off" id="textbox" name="message"><br><br><br><br><br><br>
+                    <input type="submit" value="Send">
+                </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer prop">
+        <div class="foot">
+            <div class="foot-head"><br><br>Company<br><br></div>
+            <a class="foot-link" href="coming-soon.html">Our morals</a><br>
+            <a class="foot-link" href="coming-soon.html">Membership benefits</a><br>
+            <a class="foot-link" href="coming-soon.html">Reviews</a><br>
+            <a class="foot-link" href="coming-soon.html">Blog</a><br><br><br><br><br>
+        </div>
+        
+        <div class="foot">
+            <div class="foot-head"><br><br>Contact<br><br></div>
+            <span class="foot-text">
+                <a href="mailto:haydengunk@gmail.com" class="foot-link" style="color: rgb(23, 222, 248); text-decoration: none;">haydengunk@gmail.com</a>
+            </span><br>
+            <span class="foot-text">+91 1234567890</span><br><br>
+            <a class="media twitter" href="coming-soon.html"><i class="fab fa-twitter"></i></a>
+            <a class="media facebook" href="coming-soon.html"><i class="fab fa-facebook-f"></i></a>
+            <a class="media youtube" href="coming-soon.html"><i class="fab fa-youtube"></i></a>
+            <a class="media instagram" href="coming-soon.html"><i class="fab fa-instagram"></i></a><br><br><br><br>
+            <span class="foot-text">&copy;Apex Travels (Fictional) - by Arnav Anand</span>
+        </div>
+        
+        <div class="foot">
+            <div class="foot-head"><br><br>Address<br><br></div>
+            <span class="foot-text">101 Real world</span><br>
+            <span class="foot-text">Diagon Alley</span><br>
+            <span class="foot-text">Pearl of the Black Orient</span><br>
+            <span class="foot-text">Atlantic Ocean</span><br><br><br><br><br>
+        </div>
+    </div>
+</body>
+</html>

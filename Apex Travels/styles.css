@@ -1,0 +1,292 @@
+/* Webpage by Arnav Anand */
+
+@import url(https://fonts.googleapis.com/css?family=Sanchez:400italic,400);
+
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: 'Sanchez', sans-serif;
+}
+
+.wrapper {
+    top: 10%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0 !important;
+    width: 100%;
+    background-attachment: fixed;
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.05));
+}
+
+.overlay {
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 70%;
+}
+
+.wrapper img {
+    width: 100%;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.tag {
+    position: absolute;
+    top: 43%;
+    font-size: 3em;
+    left: 19.4%;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 0.045em;
+}
+
+.stag {
+    position: absolute;
+    top: 58%;
+    font-size: 1.4em;
+    color: white;
+    left: 41.9%;
+    background-color:rgb(8, 189, 119);
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.stag:hover {
+    background-color:rgb(9, 175, 111);
+    transition: all 0.3s ease;
+}
+
+.about {
+    position: absolute;
+    top: 70%;
+    height: 100%;
+    width: 80%;
+    left: 10%;
+    overflow: initial !important;
+}
+
+.head {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    display: block;
+    font-weight: 900;
+}
+
+.popular {
+    position: absolute;
+    top: 155%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+}
+
+.planbox {
+    position: relative;
+    width: 20%;
+    height: 400px;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 0px 3px 81px 0px rgba(216, 216, 216, 0.45);
+    text-align: center;
+}
+
+.planbox > img {
+    width: 100%;
+}
+
+.btn {
+    position: relative;
+    top: 0;
+    font-size: 1em;
+    color: white;
+    left: 0;
+    background-color:rgb(8, 189, 119);
+    padding: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color:rgb(9, 175, 111);
+    transition: all 0.3s ease;
+}
+
+.gallery {
+    position: absolute;
+    top: 245%;
+    height: 110%;
+    width: 75%;
+    left: 12.5%;
+}
+
+.gall-head {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.gall-btn {
+    position: relative;
+    top: 0;
+    font-size: 1em;
+    color: black;
+    left: 0;
+    background-color: #ebebeb;
+    padding: 10px 20px;
+    margin: 30px 30px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.gall-btn:hover {
+    background-color: #dbdbdb;
+    transition: all 0.3s ease;
+}
+
+.gall-active {
+    background-color:rgb(8, 189, 119) !important;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.gall-active:hover {
+    background-color:rgb(9, 175, 111) !important;
+    transition: all 0.3s ease;
+}
+
+.place {
+    position: relative;
+    width: 23%;
+    height: 262px;
+    display: inline-block;
+    margin: 0;
+    box-shadow: 0px 3px 81px 0px rgba(216, 216, 216, 0.5);
+    text-align: center;
+}
+
+.place > img {
+    width: 100%;
+}
+
+.contact {
+    background-color: #153e52;
+    position: absolute;
+    top: 370%;
+    height: 70%;
+    width: 100%;
+    left: 0;
+    color: white;
+}
+
+.contact-txtdiv {
+    position: relative;
+    text-align: justify;
+    width: 50%;
+    left: 5%;
+    top: 0%;
+    height: 50%;
+    padding: 5%;
+}
+
+.contact-txt {
+    font-size: 1em;
+}
+
+.footer {
+    position: absolute;
+    top: 440%;
+    height: 40%;
+    width: 100%;
+    left: 0;
+    background-color: #031924;
+}
+
+.foot {
+    position: relative;
+    display: inline-block;
+    width: 23%;
+    height: 30%;
+    padding: 0 5%;
+    margin: 0;
+    text-align: center;
+    color: white;
+    line-height: 1.5em;
+}
+
+.foot-head {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.foot-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.foot-link:hover {
+    color: rgb(23, 222, 248);
+    transition: all 0.3s ease;
+}
+
+.media {
+    color: #031924;
+    background-color: white;
+    margin: 5px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.media:hover {
+    transition: all 0.3s ease;
+}
+
+.twitter {
+    padding: 12px 14px;
+}
+
+.twitter:hover {
+    background-color: #50abf1;
+    color: white;
+}
+
+.facebook {
+    padding: 12px 17px;
+}
+
+.facebook:hover {
+    background-color: #4867aa;
+    color: white;
+}
+
+.youtube {
+    padding: 12px;
+}
+
+.youtube:hover {
+    background-color: white;
+    color: #fe0000;
+}
+
+.instagram {
+    padding: 12px 15px;
+}
+
+.instagram:hover {
+    background: linear-gradient(135deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    color: white;
+}
