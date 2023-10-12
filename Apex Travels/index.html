@@ -11,95 +11,21 @@
 
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/560be50dc6.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        $('#link1').click(function(){
-           $('body,html').animate({
-               scrollTop : 0
-           }, 500);
-           return false;
-        }); 
-        });
-        
-        $(document).ready(function(){
-        $('#link2').click(function(){
-           $('body,html').animate({
-               scrollTop : 480
-           }, 500);
-           return false;
-        }); 
-        });
-        
-        $(document).ready(function(){
-        $('#link3').click(function(){
-           $('body,html').animate({
-               scrollTop : 1130
-           }, 500);
-           return false;
-        }); 
-        });
-        
-        $(document).ready(function(){
-        $('#link4').click(function(){
-           $('body,html').animate({
-               scrollTop : 1850
-           }, 500);
-           return false;
-        }); 
-        });
-
-        $(document).ready(function(){
-        $('#link5').click(function(){
-           $('body,html').animate({
-               scrollTop : 2725
-           }, 500);
-           return false;
-        }); 
-        });
-    </script>
+    
     <title>Apex Travels</title>
-
-    <style>
-        .slider {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            overflow: hidden;
-            height: 100%;
-            z-index: -1;
-        }
-
-        #slide-container {
-            position: relative;
-            left: 0;
-            top: 0;
-            width: 400%;
-            height: 70%;
-            transition: all 1s ease-in-out;
-        }
-
-        .slide {
-            position: relative;
-            height: 100%;
-            width: 25%;
-            float: left;
-        }
-    </style>
-
 </head>
+
 <body>
     <div class="nav prop">
         <a href="index.html"><img src="Images/logo.png" id="head-pic"></a>
-        <a href="" class="links" id="link1"><span>Home</span></a>
-        <a href="" class="links" id="link2"><span>About Us</span></a>
-        <a href="" class="links" id="link3"><span>Popular Plans</span></a>
-        <a href="" class="links" id="link4"><span>Gallery</span></a>
-        <a href="" class="links" id="link5"><span>Ask Us</span></a>
+        <a href="#home" class="links" id="link1"><span>Home</span></a>
+        <a href="#about" class="links" id="link2"><span>About Us</span></a>
+        <a href="#popular" class="links" id="link3"><span>Popular Plans</span></a>
+        <a href="#gallery" class="links" id="link4"><span>Gallery</span></a>
+        <a href="#contact" class="links" id="link5"><span>Ask Us</span></a>
     </div>
 
-    <div class="wrapper prop">
+    <div class="wrapper prop"  id="home">
         <div class="overlay">
             <span class="tag">Travelling has never been this easy</span>
             <a class="stag" href="coming-soon.html">Become a Member</a>
@@ -114,7 +40,7 @@
         </div>
     </div>
 
-    <div class="about prop">
+    <div class="about prop" id="about">
         <div class="head"><br><br>About Us<br><br></div>
         <img style="display: inline; float: left; width: 50%;" src="Images/staff.jpg">
         <div style="position: relative; left: 20px; text-align: justify;">
@@ -126,7 +52,7 @@
         </div>
     </div>
 
-    <div class="popular prop">
+    <div class="popular prop" id="popular">
         <div class="head"><br><br>Popular Plans<br><br></div>
         <div class="plans">
         <div style="position: relative; width: 100%; padding-left: 4.2%;">
@@ -171,7 +97,7 @@
         </div>
     </div>
 
-    <div class="gallery prop">
+    <div class="gallery prop" id="gallery">
         <div class="head"><br><br>Gallery<br><br></div>
         <div class="gall-head">
             
@@ -360,7 +286,7 @@
         </div>
     </div>
 
-    <div class="contact prop">
+    <div class="contact prop" id="contact">
         <div class="contact-txtdiv">
             <div class="head" style="text-align: left;"><br><br>Have any queries? You can ask us.<br><br></div>
             <span class="contact-txt">
